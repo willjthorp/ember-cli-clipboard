@@ -52,7 +52,7 @@ export default Component.extend({
   },
 
   willDestroyElement() {
-    const clipboard = get(this, 'clipboard').destroy();
+    const clipboard = get(this, 'clipboard');
 
     if (clipboard) {
       clipboard.destroy();
